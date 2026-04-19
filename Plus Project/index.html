@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="weather-container">
+      <header class="divider">
+        <img src="" alt="" />
+        <form id="user-city" action="" class="grid">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            id="city"
+            required
+            class="city-field"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main class="divider">
+        <section class="weather-now">
+          <div>
+            <h1>Milan</h1>
+            <p>
+              <span id="current-day-and-time">Friday 10:00</span>, partly sunny
+              <br />
+              Humidity: <span class="highlight">80%</span>, Wind:
+              <span class="highlight">2km/h</span>
+            </p>
+          </div>
+          <div class="current-weather">
+            <span class="current-emoji">🌤️</span>
+            <span id="city-temp" class="current-temperature">11</span>
+            <span class="current-unit">°C</span>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a
+            href="https://www.shecodes.io/graduates/182626-brenda-cadena"
+            target="_blank"
+            >Brenda.</a
+          >
+          and is <a href="" target="_blank">on Lorem</a> and
+          <a href="" target="_blank">hosted on Ipsum</a>
+        </p>
+      </footer>
+    </div>
+    <script src="javascript/app.js"></script>
+  </body>
+</html>
