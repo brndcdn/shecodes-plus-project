@@ -42,7 +42,6 @@ let currentDay = days[currentDate.getDay()];
 
 let currentHour = currentDate.getHours();
 let currentMinutes = currentDate.getMinutes();
-let currentTime = `${currentHour}:${currentMinutes}`;
 
 if (currentHour < 10) {
   currentHour = `0${currentHour}`;
@@ -51,6 +50,8 @@ if (currentHour < 10) {
 if (currentMinutes < 10) {
   currentMinutes = `0${currentMinutes}`;
 }
+
+let currentTime = `${currentHour}:${currentMinutes}`;
 
 let hourToday = document.querySelector("#current-day-and-time");
 hourToday.innerHTML = `${currentDay} ${currentTime}`;
